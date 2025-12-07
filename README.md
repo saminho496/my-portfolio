@@ -1,16 +1,55 @@
-# React + Vite
+# Sam Ben Johnson | Creative Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website, built with **React** and **Vite**. This project showcases my skills, projects, and experience as an aspiring software developer.
 
-Currently, two official plugins are available:
+![Portfolio Preview](./src/assets/preview.png)
+*(Note: Add a screenshot of the site to `src/assets/preview.png` to see it here)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+[Insert Live Link Here]
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI Library
+- **Vite** - Build Tool
+- **CSS3** - Custom Styling & Animations
+- **Font Awesome** - Icons
+- **React Router** - Navigation
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Modern & Responsive Design**: Glassmorphism effects, smooth animations, and mobile-friendly layout.
+- **Project Showcase**: Highlighted work including Aidify and Restaurant Management System.
+- **Skills Section**: Detailed breakdown of technical proficiencies (Python, Java, Flutter, etc.).
+- **Contact Page**: Dedicated contact information with easy navigation.
+
+## 📦 Getting Started
+
+To run this project locally, follow these steps:
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/saminho496/sam-portfolio.git
+    cd sam-portfolio
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open your browser**
+    Visit `http://localhost:5173` to view the site.
+
+## 📬 Contact
+
+**Sam Ben Johnson**
+- 📍 **Location**: Nilambur, Malappuram, Kerala, India
+- 📧 **Email**: [sambenjohnson17004@gmail.com](mailto:sambenjohnson17004@gmail.com)
+- 📞 **Phone**: +91 73567 61247
+- 💼 **LinkedIn**: [Sam Ben Johnson](https://linkedin.com/in/sam-ben-johnson)
