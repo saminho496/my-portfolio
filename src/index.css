@@ -172,6 +172,8 @@ a {
   padding: 0 20px;
 }
 
+
+
 .greeting {
   font-size: 1.1rem;
   color: var(--secondary-color);
@@ -180,12 +182,14 @@ a {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  animation: slideDown 0.5s ease-out forwards;
 }
 
 .hero h1 {
   font-size: 4.5rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  animation: slideRight 0.8s ease-out forwards;
 }
 
 .subtitle {
@@ -193,13 +197,17 @@ a {
   color: var(--text-muted);
   max-width: 600px;
   margin: 0 auto 3rem;
+  animation: slideRight 1s ease-out forwards;
 }
 
 .hero-actions {
   display: flex;
   gap: 20px;
   justify-content: center;
+  animation: slideUp 1s ease-out forwards;
 }
+
+
 
 .cta-button {
   padding: 16px 32px;
@@ -227,6 +235,55 @@ a {
 
 .cta-button.secondary:hover {
   background: var(--glass-bg);
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 0.9;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 /* Sections General */
@@ -423,6 +480,83 @@ footer {
   .contact-wrapper h2 {
     font-size: 2rem;
   }
-} 
+}
+
 /* Contact Page */
-.contact-page-container { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; position: relative; } .contact-card-wrapper { background: rgba(17, 17, 17, 0.8); backdrop-filter: blur(16px); border: 1px solid var(--glass-border); padding: 60px; border-radius: 30px; max-width: 600px; width: 100%; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.3); } .contact-card-wrapper h2 { font-size: 2.5rem; margin-bottom: 20px; } .contact-details { margin: 40px 0; display: flex; flex-direction: column; gap: 30px; text-align: left; } .contact-item { display: flex; align-items: center; gap: 20px; padding: 20px; background: var(--glass-bg); border-radius: 15px; border: 1px solid transparent; transition: all 0.3s ease; } .contact-item:hover { border-color: var(--primary-color); background: rgba(255, 255, 255, 0.08); } .contact-item i { font-size: 1.5rem; color: var(--secondary-color); width: 40px; text-align: center; } .contact-item h3 { font-size: 1rem; margin-bottom: 5px; color: var(--text-muted); } .contact-item p, .contact-item a { font-size: 1.1rem; color: #fff; font-weight: 500; } .back-home-btn { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; margin-top: 20px; }
+.contact-page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.contact-card-wrapper {
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  padding: 60px;
+  border-radius: 30px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card-wrapper h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--glass-bg);
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  border-color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  width: 40px;
+  text-align: center;
+}
+
+.contact-item h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--text-muted);
+}
+
+.contact-item p,
+.contact-item a {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-top: 20px;
+}

@@ -54,7 +54,7 @@ const Home = () => {
                             <div className="about-card">
                                 <i className="fa-solid fa-graduation-cap"></i>
                                 <h3>Education</h3>
-                                <p>B.Tech in CSE from FISAT (2022-Present). Aspiring for roles in TCS.</p>
+                                <p>B.Tech in CSE from FISAT (2022-Present).</p>
                             </div>
                         </div>
                     </div>
@@ -98,8 +98,14 @@ const Home = () => {
                                 <div className="project-image"></div>
                                 <div className="project-info">
                                     <h3>Aidify</h3>
-                                    <p>Cross-platform mobile app for differently-abled individuals using Flutter and Express.js.</p>
-                                    <a href="#" className="project-link">View Project <i className="fa-solid fa-arrow-right"></i></a>
+                                    <p>AI-Based Smart Assistant for Differently-Abled Individuals. Built with Flutter, Firebase, and Python.</p>
+                                    <ul className="project-features" style={{ margin: '10px 0 20px 20px', color: 'var(--text-muted)' }}>
+                                        <li>AI-Powered Object Detection & Navigation</li>
+                                        <li>Speech-to-Text & Text-to-Speech Synthesis</li>
+                                        <li>Hands-free Voice Assistant</li>
+                                        <li>Customizable High-Contrast Accessibility Mode</li>
+                                    </ul>
+                                    <a href="https://github.com/saminho496/aidifysam" target="_blank" rel="noopener noreferrer" className="project-link">View Project <i className="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </article>
                             <article className="project-card">
